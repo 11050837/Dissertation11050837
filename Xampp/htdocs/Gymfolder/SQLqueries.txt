@@ -1,0 +1,4 @@
+SELECT `sessions`.`Sessioname`, `sessions`.`Sessiondate` 
+FROM `sessions` 
+JOIN `tutorsesjoin` ON `tutorsesjoin`.`SessionID`
+WHERE (`tutorsesjoin`.`TutorID` ='1') AND ( `sessions`.`SessionID` = `tutorsesjoin`.`SessionID`)
